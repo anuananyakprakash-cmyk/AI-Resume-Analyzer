@@ -89,9 +89,7 @@ if uploaded_file:
                 vectors = vectorizer.fit_transform(
                     [resume_text, role_text]
                 )
-                score = cosine_similarity(
-                    vectors[0:1], vectors[1:2]
-                )[0][0] * 100
+                
 
                 matched = [
                     skill for skill in skills
@@ -101,6 +99,8 @@ if uploaded_file:
                     skill for skill in skills
                     if skill not in detected_skills
                 ]
+                score = (len(matched) / len(skills) * 100) if skills else 0
+                
 
                 results.append({
                     "Job Role": role,

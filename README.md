@@ -1,7 +1,7 @@
 # AI-Resume-Analyzer
 
 ## Project Overview
-The AI Resume Analyzer and Job Recommendation System is a Python-based application that uses Natural Language Processing (NLP) and text similarity techniques to analyze resumes and recommend suitable job roles.
+The AI Resume Analyzer and Job Recommendation System is a Python-based web application that analyzes resumes and recommends suitable job roles based on the skills detected in the resume. It calculates job-match scores using skill coverage, identifies missing skills, and provides a basic learning roadmap. The application is developed using Streamlit.
 
 ## Features
 - Upload resumes in PDF and DOCX formats.

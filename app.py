@@ -129,7 +129,7 @@ if uploaded_file:
 
             st.subheader("Selected Role Analysis")
             st.metric(
-                "Estimated Text Similarity",
+                "Skill Coverage",
                 f'{selected_result["Match Score (%)"]}%'
             )
 

@@ -41,7 +41,8 @@ job_roles = {
 
 uploaded_file = st.file_uploader(
     "Upload your resume (PDF or DOCX)",
-    type=["pdf", "docx"]
+    type=["pdf", "docx"],
+    key="resume_file_uploader"
 )
 
 if uploaded_file:
